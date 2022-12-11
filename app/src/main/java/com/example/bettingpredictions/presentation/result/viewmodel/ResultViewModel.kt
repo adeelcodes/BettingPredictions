@@ -18,6 +18,7 @@ import retrofit2.HttpException
 import java.util.*
 import javax.inject.Inject
 import kotlin.collections.ArrayList
+import com.example.bettingpredictions.data.MatchResult
 
 @HiltViewModel
 class ResultViewModel @Inject constructor(
@@ -81,7 +82,7 @@ class ResultViewModel @Inject constructor(
             }.fold({
                 Thread {
                     setSettingTime()
-                    _matchList.value = (it.matchResults ?: ArrayList()) as ArrayList<MatchResult>
+                    _matchList.value = it.matchResults
                     var addlList: ArrayList<MatchesData> = ArrayList()
                     var updateList: ArrayList<MatchesData> = ArrayList()
                     for (match in it.matchResults) {
