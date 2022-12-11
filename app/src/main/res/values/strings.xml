@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Betting Predictions</string>
+    <string name="Get_results">Get results >></string>
+    <string name="Restore">Restore</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="dialog_button_text_enter">Enter</string>
+</resources>
